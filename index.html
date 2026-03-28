@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Japan Emergency Phrases - Essential phrases for emergencies in Japan</title>
+  <meta name="description" content="Free emergency phrase guide for foreigners in Japan. Copy Japanese phrases instantly for medical, police, disaster, and daily situations.">
+  <meta property="og:title" content="Japan Emergency Phrases">
+  <meta property="og:description" content="Essential phrases for emergencies in Japan. Tap to copy.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Japan Emergency Phrases">
+  <meta name="twitter:description" content="Essential phrases for emergencies in Japan. Tap to copy.">
+
+  <!-- Google Analytics 4 - uncomment when tracking ID is ready
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+  -->
+
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --bg: #ffffff;
+      --bg-card: #ffffff;
+      --bg-header: #d32f2f;
+      --text: #1a1a1a;
+      --text-secondary: #555555;
+      --text-romaji: #777777;
+      --accent: #d32f2f;
+      --accent-hover: #b71c1c;
+      --border: #e0e0e0;
+      --tab-bg: #f5f5f5;
+      --tab-active: #d32f2f;
+      --tab-text: #555555;
+      --tab-active-text: #ffffff;
+      --toast-bg: #333333;
+      --toast-text: #ffffff;
+      --footer-bg: #f5f5f5;
+      --shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #121212;
+        --bg-card: #1e1e1e;
+        --bg-header: #b71c1c;
+        --text: #e0e0e0;
+        --text-secondary: #aaaaaa;
+        --text-romaji: #999999;
+        --border: #333333;
+        --tab-bg: #1e1e1e;
+        --tab-active: #d32f2f;
+        --tab-text: #aaaaaa;
+        --tab-active-text: #ffffff;
+        --toast-bg: #e0e0e0;
+        --toast-text: #121212;
+        --footer-bg: #1a1a1a;
+        --shadow: 0 2px 8px rgba(0,0,0,0.3);
+      }
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Header */
+    header {
+      background: var(--bg-header);
+      color: #ffffff;
+      text-align: center;
+      padding: 24px 16px 20px;
+    }
+
+    header h1 {
+      font-size: 1.6rem;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+
+    header p {
+      font-size: 0.95rem;
+      opacity: 0.9;
+    }
+
+    /* Tabs */
+    .tabs {
+      display: flex;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      background: var(--tab-bg);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .tabs::-webkit-scrollbar {
+      display: none;
+    }
+
+    .tab-btn {
+      flex: 1 0 auto;
+      min-width: 0;
+      padding: 12px 16px;
+      border: none;
+      background: transparent;
+      color: var(--tab-text);
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: background 0.2s, color 0.2s;
+      border-bottom: 3px solid transparent;
+      font-family: inherit;
+    }
+
+    .tab-btn.active {
+      color: var(--tab-active-text);
+      background: var(--tab-active);
+      border-bottom-color: var(--accent-hover);
+    }
+
+    /* Content */
+    main {
+      flex: 1;
+      padding: 16px;
+      max-width: 600px;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    .category {
+      display: none;
+    }
+
+    .category.active {
+      display: block;
+    }
+
+    .category-icon {
+      font-size: 1.2rem;
+      margin-right: 4px;
+    }
+
+    /* Phrase Card */
+    .phrase-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 16px;
+      margin-bottom: 12px;
+      box-shadow: var(--shadow);
+      position: relative;
+    }
+
+    .phrase-jp {
+      font-size: 1.3rem;
+      font-weight: 700;
+      margin-bottom: 4px;
+      padding-right: 70px;
+    }
+
+    .phrase-en {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      margin-bottom: 4px;
+    }
+
+    .phrase-romaji {
+      font-size: 0.85rem;
+      color: var(--text-romaji);
+      font-style: italic;
+    }
+
+    .copy-btn {
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      background: var(--accent);
+      color: #ffffff;
+      border: none;
+      border-radius: 8px;
+      padding: 8px 14px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.1s;
+      font-family: inherit;
+    }
+
+    .copy-btn:hover {
+      background: var(--accent-hover);
+    }
+
+    .copy-btn:active {
+      transform: scale(0.95);
+    }
+
+    .copy-btn.copied {
+      background: #2e7d32;
+    }
+
+    /* Emergency numbers banner */
+    .emergency-banner {
+      background: var(--accent);
+      color: #ffffff;
+      border-radius: 12px;
+      padding: 16px;
+      margin-bottom: 16px;
+      text-align: center;
+    }
+
+    .emergency-banner h3 {
+      font-size: 1rem;
+      margin-bottom: 10px;
+    }
+
+    .emergency-numbers {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .emergency-num {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .emergency-num .number {
+      font-size: 1.5rem;
+      font-weight: 800;
+    }
+
+    .emergency-num .label {
+      font-size: 0.75rem;
+      opacity: 0.9;
+    }
+
+    /* Toast */
+    .toast {
+      position: fixed;
+      bottom: 24px;
+      left: 50%;
+      transform: translateX(-50%) translateY(80px);
+      background: var(--toast-bg);
+      color: var(--toast-text);
+      padding: 10px 24px;
+      border-radius: 24px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      opacity: 0;
+      transition: transform 0.3s ease, opacity 0.3s ease;
+      z-index: 100;
+      pointer-events: none;
+    }
+
+    .toast.show {
+      transform: translateX(-50%) translateY(0);
+      opacity: 1;
+    }
+
+    /* Footer */
+    footer {
+      background: var(--footer-bg);
+      padding: 24px 16px;
+      text-align: center;
+      border-top: 1px solid var(--border);
+    }
+
+    .footer-numbers {
+      margin-bottom: 20px;
+    }
+
+    .footer-numbers h3 {
+      font-size: 1rem;
+      margin-bottom: 8px;
+      color: var(--accent);
+    }
+
+    .footer-numbers p {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      margin-bottom: 2px;
+    }
+
+    .affiliate-section {
+      margin-top: 20px;
+      padding-top: 16px;
+      border-top: 1px solid var(--border);
+    }
+
+    .affiliate-section h4 {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      margin-bottom: 8px;
+    }
+
+    .affiliate-links {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .affiliate-link {
+      display: inline-block;
+      padding: 8px 20px;
+      background: var(--accent);
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      transition: background 0.2s;
+    }
+
+    .affiliate-link:hover {
+      background: var(--accent-hover);
+    }
+
+    .footer-tagline {
+      margin-top: 20px;
+      font-size: 0.8rem;
+      color: var(--text-romaji);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Japan Emergency Phrases</h1>
+    <p>Essential phrases for emergencies in Japan. Tap to copy.</p>
+  </header>
+
+  <div class="tabs" role="tablist">
+    <button class="tab-btn active" data-tab="medical" role="tab" aria-selected="true">
+      <span class="category-icon">🏥</span> Medical
+    </button>
+    <button class="tab-btn" data-tab="police" role="tab" aria-selected="false">
+      <span class="category-icon">🚔</span> Police
+    </button>
+    <button class="tab-btn" data-tab="disaster" role="tab" aria-selected="false">
+      <span class="category-icon">🌊</span> Disaster
+    </button>
+    <button class="tab-btn" data-tab="daily" role="tab" aria-selected="false">
+      <span class="category-icon">💬</span> Daily
+    </button>
+  </div>
+
+  <main>
+
+    <!-- MEDICAL / HOSPITAL -->
+    <div class="category active" id="medical">
+      <div class="emergency-banner">
+        <h3>Emergency Number for Ambulance & Fire</h3>
+        <div class="emergency-numbers">
+          <div class="emergency-num">
+            <span class="number">119</span>
+            <span class="label">Ambulance / Fire</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="phrase-card">
+        <div class="phrase-jp">救急車を呼んでください</div>
+        <div class="phrase-en">Please call an ambulance</div>
+        <div class="phrase-romaji">Kyuukyuusha wo yonde kudasai</div>
+        <button class="copy-btn" data-clipboard-text="救急車を呼んでください">Copy</button>
+      </div>
+
+      <div class="phrase-card">
+        <div class="phrase-jp">119に電話してください</div>
+        <div class="phrase-en">Please call 119</div>
+        <div class="phrase-romaji">Hyaku juu kyuu ni denwa shite kudasai</div>
+        <button class="copy-btn" data-clipboard-text="119に電話してください">Copy</button>
+      </div>
+
+      <div class="phrase-card">
+        <div class="phrase-jp">ここが痛いです</div>
+        <div class="phrase-en">I'm in pain here (point to the area)</div>
+        <div class="phrase-romaji">Koko ga itai desu</div>
+        <button class="copy-btn" data-clipboard-text="ここが痛いです">Copy</button>
+      </div>
+
+      <div class="phrase-card">
+        <div class="phrase-jp">___アレルギーがあります</div>
+        <div class="phrase-en">I'm allergic to ___</div>
+        <div class="phrase-romaji">___ arerugi ga arimasu</div>
+        <button class="copy-btn" data-clipboard-text="アレルギーがあります">Copy</button>
+      </div>
+
+      <div class="phrase-card">
+        <div class="phrase-jp">薬が必要です</div>
+        <div class="phrase-en">I need medicine</div>
+        <div class="phrase-romaji">Kusuri ga hitsuyou desu</div>
+        <button class="copy-btn" data-clipboard-text="薬が必要です">Copy</button>
+      </div>
+
+      <div class="phrase-card">
+        <div class="phrase-jp">一番近い病院はどこですか？</div>
+        <div class="phrase-en">Where is the nearest hospital?</div>
+        <div class="phrase-romaji">Ichiban chikai byouin wa doko desu ka?</div>
+        <button class="copy-btn" data-clipboard-text="一番近い病院はどこですか？">Copy</button>
+      </div>
+
+      <div class="phrase-card">
+        <div class="phrase-jp">保険に入っています</div>
+        <div class="phrase-en">I have insurance</div>
+        <div class="phrase-romaji">Hoken ni haitte imasu</div>
+        <button class="copy-btn" data-clipboard-text="保険に入っています">Copy</button>
+      </div>
+
+      <div class="phrase-card">
+        <div class="phrase-jp">頭が痛いです</div>
+        <div class="phrase-en">I have a headache</div>
+        <div class="phrase-romaji">Atama ga itai desu</div>
+        <button class="copy-btn" data-clipboard-text="頭が痛いです">Copy</button>
+      </div>
+
+      <div class="phrase-card">
+        <div class="phrase-jp">お腹が痛いです</div>
+        <div class="phrase-en">I have a stomachache</div>
+        <div class="phrase-romaji">Onaka ga itai desu</div>
+        <button class="copy-btn" data-clipboard-text="お腹が痛いです">Copy</button>
+      </div>
+
+      <div class="phrase-card">
+        <div class="phrase-jp">熱があります</div>
+        <div class="phrase-en">I have a fever</div>
+        <div class="phrase-romaji">Netsu ga arimasu</div>
+        <button class="copy-btn" data-clipboard-text="熱があります">Copy</button>
+      </div>
+
+      <div class="phrase-card">
+        <div class="phrase-jp">気分が悪いです</div>
+        <div class="phrase-en">I feel sick</div>
+        <div class="phrase-romaji">Kibun ga warui desu</div>
+        <button class="copy-btn" data-clipboard-text="気分が悪いです">Copy</button>
+      </div>
+
+      <div class="phrase-card">
+        <div class="phrase-jp">救急外来はどこですか？</div>
+        <div class="phrase-en">Where is the emergency room?</div>
+        <div class="phrase-romaji">Kyuukyuu gairai wa doko desu ka?</div>
+        <button class="copy-btn" data-clipboard-text="救急外来はどこですか？">Copy</button>
+      </div>
+    </div>
+
+    <!-- POLICE / CRIME -->
+    <div class="category" id="police">
+      <div class="emergency-banner">
+        <h3>Emergency Number for Police</h3>
+        <div class="emergency-numbers">
+          <div class="emergency-num">
+            <span class="number">110</span>
+            <span class="label">Police</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="phrase-card">
+        <div class="phrase-jp">110に電話してください</div>
+        <div class="phrase-en">Please call 110</div>
+        <div class="phrase-romaji">Hyaku tou ban ni denwa shite kudasai</div>
+        <button class="copy-btn" data-clipboard-text="110に電話してください">Copy</button>
+      </div>
+
+      <div class="phrase-card">
+        <div class="phrase-jp">犯罪の届出をしたいです</div>
+        <div class="phrase-en">I want to report a crime</div>
+        <div class="phrase-romaji">Hanzai no todokede wo shitai desu</div>
+        <button class="copy-btn" data-clipboard-text="犯罪の届出をしたいです">Copy</button>
+      </div>
+
+      <div class="phrase-card">
+        <div class="phrase-jp">財布を盗まれました</div>
+        <div class="phrase-en">My wallet was stolen</div>
+        <div class="phrase-romaji">Saifu wo nusumaremashita</div>
+        <button class="copy-btn" data-clipboard-text="財布を盗まれました">Copy</button>
+      </div>
+
+      <div class="phrase-card">
+        <div class="phrase-jp">パスポートをなくしました</div>
+        <div class="phrase-en">I lost my passport</div>
+        <div class="phrase-romaji">Pasupooto wo nakushimashita</div>
+        <button class="copy-btn" data-clipboard-text="パスポートをなくしました">Copy</button>
+      </div>
+
+      <div class="phrase-card">
+        <div class="phrase-jp">交番に行きたいです</div>
+        <div class="phrase-en">I need to go to the police station</div>
+        <div class="phrase-romaji">Kouban ni ikitai desu</div>
+        <button class="copy-btn" data-clipboard-text="交番に行きたいです">Copy</button>
+      </div>
+
+      <div class="phrase-card">
+        <div class="phrase-jp">スマホを盗まれました</div>
+        <div class="phrase-en">My phone was stolen</div>
+        <div class="phrase-romaji">Sumaho wo nusumaremashita</div>
+        <button class="copy-btn" data-clipboard-text="スマホを盗まれました">Copy</button>
+      </div>
+
+      <div class="phrase-card">
+        <div class="phrase-jp">事故がありました</div>
+        <div class="phrase-en">There was an accident</div>
+        <div class="phrase-romaji">Jiko ga arimashita</div>
+        <button class="copy-btn" data-clipboard-text="事故がありました">Copy</button>
+      </div>
+
+      <div class="phrase-card">
+        <div class="phrase-jp">被害届を出したいです</div>
+        <div class="phrase-en">I want to file a damage report</div>
+        <div class="phrase-romaji">Higai todoke wo dashitai desu</div>
+        <button class="copy-btn" data-clipboard-text="被害届を出したいです">Copy</button>
+      </div>
+
+      <div class="phrase-card">
+        <div class="phrase-jp">大使館に連絡したいです</div>
+        <div class="phrase-en">I want to contact my embassy</div>
+        <div class="phrase-romaji">Taishikan ni renraku shitai desu</div>
+        <button class="copy-btn" data-clipboard-text="大使館に連絡したいです">Copy</button>
+      </div>
+    </div>
+
+    <!-- NATURAL DISASTER -->
+    <div class="category" id="disaster">
+      <div class="emergency-banner">
+        <h3>Emergency Numbers</h3>
+        <div class="emergency-numbers">
+          <div class="emergency-num">
+            <span class="number">119</span>
+            <span class="label">Fire / Rescue</span>
+          </div>
+          <div class="emergency-num">
+            <span class="number">110</span>
+            <span class="label">Police</span>
+          </div>
+          <div class="emergency-num">
+            <span class="number">118</span>
+            <span class="label">Coast Guard</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="phrase-card">
+        <div class="phrase-jp">地震！</div>
+        <div class="phrase-en">Earthquake!</div>
+        <div class="phrase-romaji">Jishin!</div>
+        <button class="copy-btn" data-clipboard-text="地震！">Copy</button>
+      </div>
+
+      <div class="phrase-card">
+        <div class="phrase-jp">避難所はどこですか？</div>
+        <div class="phrase-en">Where is the evacuation shelter?</div>
+        <div class="phrase-romaji">Hinanjo wa doko desu ka?</div>
+        <button class="copy-btn" data-clipboard-text="避難所はどこですか？">Copy</button>
+      </div>
+
+      <div class="phrase-card">
+        <div class="phrase-jp">津波警報は出ていますか？</div>
+        <div class="phrase-en">Is there a tsunami warning?</div>
+        <div class="phrase-romaji">Tsunami keihou wa dete imasu ka?</div>
+        <button class="copy-btn" data-clipboard-text="津波警報は出ていますか？">Copy</button>
+      </div>
+
+      <div class="phrase-card">
+        <div class="phrase-jp">非常口はどこですか？</div>
+        <div class="phrase-en">Where is the emergency exit?</div>
+        <div class="phrase-romaji">Hijouguchi wa doko desu ka?</div>
+        <button class="copy-btn" data-clipboard-text="非常口はどこですか？">Copy</button>
+      </div>
+
+      <div class="phrase-card">
+        <div class="phrase-jp">水が必要です</div>
+        <div class="phrase-en">I need water</div>
+        <div class="phrase-romaji">Mizu ga hitsuyou desu</div>
+        <button class="copy-btn" data-clipboard-text="水が必要です">Copy</button>
+      </div>
+
+      <div class="phrase-card">
+        <div class="phrase-jp">食べ物が必要です</div>
+        <div class="phrase-en">I need food</div>
+        <div class="phrase-romaji">Tabemono ga hitsuyou desu</div>
+        <button class="copy-btn" data-clipboard-text="食べ物が必要です">Copy</button>
+      </div>
+
+      <div class="phrase-card">
+        <div class="phrase-jp">ここは安全ですか？</div>
+        <div class="phrase-en">Is it safe here?</div>
+        <div class="phrase-romaji">Koko wa anzen desu ka?</div>
+        <button class="copy-btn" data-clipboard-text="ここは安全ですか？">Copy</button>
+      </div>
+
+      <div class="phrase-card">
+        <div class="phrase-jp">高台に逃げてください</div>
+        <div class="phrase-en">Please evacuate to higher ground</div>
+        <div class="phrase-romaji">Takadai ni nigete kudasai</div>
+        <button class="copy-btn" data-clipboard-text="高台に逃げてください">Copy</button>
+      </div>
+
+      <div class="phrase-card">
+        <div class="phrase-jp">余震に注意してください</div>
+        <div class="phrase-en">Please be careful of aftershocks</div>
+        <div class="phrase-romaji">Yoshin ni chuui shite kudasai</div>
+        <button class="copy-btn" data-clipboard-text="余震に注意してください">Copy</button>
+      </div>
+    </div>
+
+    <!-- DAILY TROUBLES -->
+    <div class="category" id="daily">
+
+      <div class="phrase-card">
+        <div class="phrase-jp">日本語がわかりません</div>
+        <div class="phrase-en">I don't understand Japanese</div>
+        <div class="phrase-romaji">Nihongo ga wakarimasen</div>
+        <button class="copy-btn" data-clipboard-text="日本語がわかりません">Copy</button>
+      </div>
+
+      <div class="phrase-card">
+        <div class="phrase-jp">英語を話せますか？</div>
+        <div class="phrase-en">Can you speak English?</div>
+        <div class="phrase-romaji">Eigo wo hanasemasu ka?</div>
+        <button class="copy-btn" data-clipboard-text="英語を話せますか？">Copy</button>
+      </div>
+
+      <div class="phrase-card">
+        <div class="phrase-jp">助けてください</div>
+        <div class="phrase-en">Please help me</div>
+        <div class="phrase-romaji">Tasukete kudasai</div>
+        <button class="copy-btn" data-clipboard-text="助けてください">Copy</button>
+      </div>
+
+      <div class="phrase-card">
+        <div class="phrase-jp">道に迷いました</div>
+        <div class="phrase-en">I'm lost</div>
+        <div class="phrase-romaji">Michi ni mayoimashita</div>
+        <button class="copy-btn" data-clipboard-text="道に迷いました">Copy</button>
+      </div>
+
+      <div class="phrase-card">
+        <div class="phrase-jp">駅はどこですか？</div>
+        <div class="phrase-en">Where is the station?</div>
+        <div class="phrase-romaji">Eki wa doko desu ka?</div>
+        <button class="copy-btn" data-clipboard-text="駅はどこですか？">Copy</button>
+      </div>
+
+      <div class="phrase-card">
+        <div class="phrase-jp">電車に乗り遅れました</div>
+        <div class="phrase-en">I missed my train</div>
+        <div class="phrase-romaji">Densha ni noriokuremashita</div>
+        <button class="copy-btn" data-clipboard-text="電車に乗り遅れました">Copy</button>
+      </div>
+
+      <div class="phrase-card">
+        <div class="phrase-jp">トイレはどこですか？</div>
+        <div class="phrase-en">Where is the restroom?</div>
+        <div class="phrase-romaji">Toire wa doko desu ka?</div>
+        <button class="copy-btn" data-clipboard-text="トイレはどこですか？">Copy</button>
+      </div>
+
+      <div class="phrase-card">
+        <div class="phrase-jp">Wi-Fiはありますか？</div>
+        <div class="phrase-en">Do you have Wi-Fi?</div>
+        <div class="phrase-romaji">Waifai wa arimasu ka?</div>
+        <button class="copy-btn" data-clipboard-text="Wi-Fiはありますか？">Copy</button>
+      </div>
+
+      <div class="phrase-card">
+        <div class="phrase-jp">充電させてもらえますか？</div>
+        <div class="phrase-en">Can I charge my phone here?</div>
+        <div class="phrase-romaji">Juuden sasete moraemasu ka?</div>
+        <button class="copy-btn" data-clipboard-text="充電させてもらえますか？">Copy</button>
+      </div>
+
+      <div class="phrase-card">
+        <div class="phrase-jp">タクシーを呼んでください</div>
+        <div class="phrase-en">Please call a taxi</div>
+        <div class="phrase-romaji">Takushii wo yonde kudasai</div>
+        <button class="copy-btn" data-clipboard-text="タクシーを呼んでください">Copy</button>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="footer-numbers">
+      <h3>Japan Emergency Numbers</h3>
+      <p><strong>110</strong> - Police</p>
+      <p><strong>119</strong> - Ambulance / Fire Department</p>
+      <p><strong>118</strong> - Coast Guard (Japan Coast Guard)</p>
+    </div>
+
+    <div class="affiliate-section">
+      <h4>Prepare for your trip</h4>
+      <div class="affiliate-links">
+        <!-- Unhide when affiliate URL is ready -->
+        <a href="#" class="affiliate-link" id="insurance-link" style="display:none" data-needs-url="true">Protect yourself with travel insurance</a>
+        <!-- Unhide when affiliate URL is ready -->
+        <a href="#" class="affiliate-link" id="sim-link" style="display:none" data-needs-url="true">Stay connected in Japan - Get a SIM card</a>
+      </div>
+    </div>
+
+    <p class="footer-tagline">Made for foreigners living in &amp; traveling to Japan</p>
+  </footer>
+
+  <!-- Toast notification -->
+  <div class="toast" id="toast">Copied!</div>
+
+  <!-- clipboard.js from jsDelivr CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+
+  <script>
+    // Tab switching
+    const tabBtns = document.querySelectorAll('.tab-btn');
+    const categories = document.querySelectorAll('.category');
+
+    tabBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        // Remove active from all tabs
+        tabBtns.forEach(b => {
+          b.classList.remove('active');
+          b.setAttribute('aria-selected', 'false');
+        });
+        // Remove active from all categories
+        categories.forEach(c => c.classList.remove('active'));
+
+        // Activate clicked tab
+        btn.classList.add('active');
+        btn.setAttribute('aria-selected', 'true');
+
+        // Show corresponding category
+        const tabId = btn.getAttribute('data-tab');
+        document.getElementById(tabId).classList.add('active');
+
+        // Scroll to top of main content
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    });
+
+    // Clipboard.js
+    const clipboard = new ClipboardJS('.copy-btn');
+    const toast = document.getElementById('toast');
+    let toastTimer;
+
+    clipboard.on('success', function(e) {
+      // Visual feedback on button
+      const btn = e.trigger;
+      btn.textContent = 'Copied!';
+      btn.classList.add('copied');
+
+      // Show toast
+      toast.classList.add('show');
+      clearTimeout(toastTimer);
+      toastTimer = setTimeout(() => {
+        toast.classList.remove('show');
+      }, 1500);
+
+      // Reset button after delay
+      setTimeout(() => {
+        btn.textContent = 'Copy';
+        btn.classList.remove('copied');
+      }, 2000);
+
+      e.clearSelection();
+    });
+
+    clipboard.on('error', function(e) {
+      // Fallback: select text for manual copy
+      const btn = e.trigger;
+      btn.textContent = 'Press Ctrl+C';
+      setTimeout(() => {
+        btn.textContent = 'Copy';
+      }, 2000);
+    });
+  </script>
+
+</body>
+</html>
