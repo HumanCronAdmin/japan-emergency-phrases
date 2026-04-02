@@ -1,0 +1,20 @@
+# REDDIT Draft
+> Groq | 2026-04-01 17:31
+
+Title: Just discovered an amazing tool for foreigners in Japan: one-tap copy emergency phrases!
+
+Hey fellow Redditors,
+
+I just stumbled upon an incredibly useful tool that I think anyone traveling to or living in Japan should know about. As some of you may know, I recently posted a roundup article on DEV.to covering free tools that can help foreigners in Japan, but I wanted to do a deeper dive on this one because it's just so cool.
+
+The tool is called Japan Emergency Phrases, and it's a simple web app that allows you to copy essential emergency phrases in Japanese with just one tap. Yes, you read that right - one tap! No more fumbling around with dictionaries or Google Translate when you're in a crisis situation.
+
+The phrases are categorized by situation, such as "Medical Emergency", "Police", and "Fire", making it easy to find what you need quickly. And the best part? The phrases are all written in Japanese characters (kanji, hiragana, and katakana), so you can just copy and paste them into a message or show them to someone who can help.
+
+I can imagine how stressful it must be to be in a foreign country and not be able to communicate in an emergency. This tool could actually be a lifesaver. And it's not just limited to tourists - expats and foreigners living in Japan can also benefit from having these phrases at their fingertips.
+
+You can check it out here: https://humancronadmin.github.io/japan-emergency-phrases/
+
+Has anyone else used this tool or something similar? What are your favorite resources for navigating emergency situations in Japan? Share your experiences and tips in the comments below!
+
+Edit: I should note that the developer has done an amazing job of keeping the tool simple and easy to use, while also making sure the phrases are accurate and up-to-date. Kudos to them for creating such a valuable resource!

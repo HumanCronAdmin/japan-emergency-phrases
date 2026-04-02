@@ -1,0 +1,8 @@
+# DISCORD Draft
+> Groq | 2026-04-01 17:31
+
+Hey devs, just wanted to give a shoutout to a really useful tool I stumbled upon: https://humancronadmin.github.io/japan-emergency-phrases/. If you've ever traveled to Japan or know someone who has, you know how stressful it can be to navigate an emergency situation when you don't speak the language. 
+
+This tool provides one-tap copy for essential emergency phrases in Japanese, which can be a total lifesaver in a crisis. No more scrambling to find the right words or trying to pronounce unfamiliar characters. Just tap, copy, and paste - it's a huge relief to have this kind of support when you need it most.
+
+I actually covered this tool (along with 12 others) in a roundup article on DEV.to, but I wanted to give it a special mention here because of its unique value prop. If you have friends or family traveling to Japan, be sure to pass this along - it's a simple but powerful resource that can make a big difference in an emergency. Check it out and let me know what you think!

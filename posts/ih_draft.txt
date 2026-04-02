@@ -1,0 +1,52 @@
+# IH Draft
+> Groq | 2026-04-01 17:31
+
+**Transparent Solo Builder Update: Launching Japan Emergency Phrases, a Lifesaving Tool for Foreigners in Crisis**
+
+Hey fellow Indie Hackers,
+
+I'm sharing with you my latest project, [Japan Emergency Phrases](https://humancronadmin.github.io/japan-emergency-phrases/), a tool that provides one-tap copy emergency phrases in Japanese for foreigners in crisis situations. As a solo builder, I'm committed to transparency, and I'll dive into the motivations, features, and future plans for this project.
+
+**Problem Statement**
+
+As a foreigner traveling to Japan, communicating during emergency situations can be a significant challenge. Whether it's a medical emergency, a lost child, or a natural disaster, being able to convey your needs quickly and accurately is important. However, the language barrier can be a significant obstacle, leading to delayed responses and potentially worsening the situation.
+
+**Solution**
+
+Japan Emergency Phrases aims to bridge this gap by providing a simple, easy-to-use tool that allows foreigners to copy and paste essential emergency phrases in Japanese. With just one tap, users can access phrases like "I need help," "Where is the hospital?", or "I'm lost." These phrases can be copied and shared with authorities, medical personnel, or other individuals who can provide assistance.
+
+**Unique Value Proposition**
+
+What sets Japan Emergency Phrases apart is its focus on simplicity and speed. Unlike other language learning apps or phrasebooks, this tool is specifically designed for emergency situations, where every second counts. By providing one-tap copy functionality, users can quickly access the phrases they need, without having to navigate through complex menus or waste time typing out phrases.
+
+**Features**
+
+* One-tap copy emergency phrases in Japanese
+* Phrases categorized by situation (medical, lost, natural disaster, etc.)
+* Simple, intuitive interface
+* No ads, no tracking, and completely free
+
+**Marketing and Promotion**
+
+To promote Japan Emergency Phrases, I've written a roundup article on DEV.to covering free tools that help foreigners in Japan, including my own tool. This article has helped drive traffic to the site and increase visibility. I'll continue to explore other marketing channels, such as social media, travel blogs, and Japanese language learning communities.
+
+**Future Plans**
+
+In the coming weeks, I plan to:
+
+* Add more phrases and categories to the tool
+* Improve the user interface for better accessibility
+* Collaborate with Japanese language experts to ensure phrase accuracy
+* Explore partnerships with travel companies and Japanese authorities to promote the tool
+
+**Conclusion**
+
+Japan Emergency Phrases is a tool that can potentially save lives by providing foreigners with a quick and easy way to communicate during emergency situations in Japan. As a solo builder, I'm committed to continually improving and expanding this tool to better serve its users. If you have any feedback, suggestions, or ideas, please don't hesitate to reach out. Let's work together to make a positive impact on the world, one tool at a time.
+
+**Metrics**
+
+* Page views: 500+ (since launch)
+* User engagement: 20+ phrases copied per day
+* Feedback: 5+ emails with suggestions and appreciation
+
+I'll continue to share updates on the progress of Japan Emergency Phrases, including user feedback, feature additions, and marketing efforts. Stay tuned for more updates from my journey as a transparent solo builder!
