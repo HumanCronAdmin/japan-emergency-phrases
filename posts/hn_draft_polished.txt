@@ -1,0 +1,19 @@
+# HN Draft
+> Gemini | 2026-04-01 17:31
+
+Show HN: Japan Emergency Phrases - One-Tap Copy for Foreigners in Crisis**
+
+URL: https://humancronadmin.github.io/japan-emergency-phrases/
+
+For foreigners in Japan, getting through an emergency can be very difficult. The stress of a crisis situation can make complex communication and reliance on generic translation applications difficult and cause mistakes.
+
+**Japan Emergency Phrases** is a simple, static web application designed to address this particular problem. We have carefully selected Japanese phrases that are necessary in an emergency situation and translated them for immediate use.
+
+**Core Features:**
+* One-tap copy:** Each phrase has a dedicated button that instantly copies the Japanese text to the clipboard. This allows the user to quickly indicate a phrase to a first responder, health care professional, or other individual who can assist, without having to type or formulate the sentence under duress.
+* Phrases are pre-screened for accuracy and directness, focusing on key information ("I need an ambulance," "I am lost," "I have severe allergies," etc.).
+* Mobile-first design: ** The interface is optimized for quick access and readability on smartphones, ensuring ease of use in fast-moving situations.
+** Offline functionality (PWA-like): ** Sites hosted on GitHub Pages are lightweight, can be installed on the home screen like an app, and once cached have the potential to provide basic functionality even with limited or no Internet access Once cached, they have the potential to provide basic functionality even with limited or no Internet access.
+
+**Why not Google Translate?
+In a genuine emergency, every second counts.

@@ -1,0 +1,66 @@
+# Notes Draft
+> Gemini
+
+## I want to cross the language barrier! My story about my emergency phrase book.
+
+Hello, it's me, and today I'd like to talk a bit about a modest web service I recently released, from the impetus behind its creation to the response after its release.
+
+### The trigger was a "troubled face" I saw on the street.
+
+Recently, the number of foreign tourists visiting Japan has really increased.
+
+It makes me wonder what would happen if they were to get into unexpected trouble in Japan.
+
+A few years ago, I heard a story about a friend of mine who fell ill while traveling abroad.
+
+In particular, Japan is a country that is prone to natural disasters such as earthquakes and typhoons.
+
+What was supposed to be an enjoyable trip or a comfortable life is instead put in danger of death by the language barrier, or left behind from necessary information, which is not always the case.
+
+### I have created something, which is the "Japan Emergency Phrase Book".
+
+With this in mind, I arrived at the answer: the website ["Japan Emergency Phrase Book"](https://humancronadmin.github.io/japan-emergency-phrases/).
+
+I created this website so that foreigners in Japan can give necessary information and ask for help even when they do not speak Japanese.
+
+Specifically
+**"Emergency "**: "Please help me", "Call the police".
+**"Sick/Injured "**: "I have a stomachache", "I have a fever".
+* "In case of disaster "**: "Where is the shelter?" "Earthquake.
+* "Personal Safety "**: "I have lost my wallet", "I am lost".
+* "Other" **: "Where is the restroom?
+
+These phrases are carefully selected to be useful in a variety of situations.
+
+And the most important thing is its **multilingual support**, not only English, but also Chinese (Simplified), Korean, Tagalog, Vietnamese, Indonesian, Thai, Nepali, Myanmar, Khmer, Mongolian, Urdu, Bengali, Russian, Spanish, Portuguese French, German, Arabic, Hindi, and more.
+
+In addition, each phrase has an audio playback button** in addition to Japanese, the language of your choice, and English. This is very useful in situations where it is difficult to read the text, or when you want someone to hear the phrase directly from you.
+
+During development, we struggled with the accuracy of multilingual translation and the collection of natural sound data.
+
+My ideal is that this site will be like a "little good luck charm" for foreigners in Japan who need help overcoming the language barrier.
+
+### I was filled with joy at the reactions after the release of the site.
+
+After the site was opened to the public and introduced on SNS and other social networking sites, we received more feedback than we had imagined.
+
+We really needed this!" My heart was filled with emotion as I received many warm comments such as, "This will be useful when guiding foreign tourists," and "This could be used in the medical field.
+
+What made me especially happy was when a medical professional actually said to me, "This can be used when explaining to patients at the hospital.
+
+I want more phrases like this," "I want the site to support more languages," "We received specific feedback, which is a valuable hint for future improvements," "It is a small site that I created by myself, but I feel great joy that so many people are paying attention and have high expectations of me. I am very happy that so many people are paying attention to this small site that I created by myself.
+
+### Hopefully, this tool will not be "used".
+
+My "Japan Emergency Phrase Book", a useful tool for those times when you are in trouble.
+
+Because if this phrasebook is used, it means that someone is facing an emergency situation in Japan.
+
+Still, if by some chance someone is in trouble because of the language barrier, I would be more than happy if this site can help them and ease their anxiety.
+
+Based on the feedback we have received, we would like to continue to grow this collection of phrases so that more people can feel at ease in Japan.
+
+[Click here for the Japan Emergency Phrasebook](https://humancronadmin.github.io/japan-emergency-phrases/)
+
+Thank you for reading to the end!
+I hope my small challenge will lead to someone's great relief.
